@@ -1,0 +1,101 @@
+﻿.yacChatBox div,iframe {
+    -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+    -moz-box-sizing: border-box;    /* Firefox, other Gecko */
+    box-sizing: border-box;  
+    margin:0;
+    padding:0;
+}
+.yacChatBox {
+    width:340px;
+    height:470px;
+    position:fixed;
+    right: 5px;
+    bottom: 5px;
+    overflow:hidden;
+    margin:0px;
+    padding:0px;
+    box-sizing: border-box;
+}
+
+.yacChatBox a {
+    background-color: transparent; 
+}
+
+.yacChatBox .border {
+    position: absolute;
+    width:100%;
+    height:100%;
+    background: #59ACDA none repeat scroll 0% 0%;
+    opacity:0.8;
+    border-radius:5px;
+}
+.yacChatBox .inner {
+    position:relative;
+    z-index:2;
+    padding:4px;
+}
+.yacChatBox .inner-background {
+    border: 1px solid #4684C0;
+    background: #FFF none repeat scroll 0% 0%;
+}
+.yacChatBox .title {
+    background: #C2EBF7 none repeat scroll 0% 0%;
+    padding: 2px 2px 2px 4px;
+    font-size: 1.1em;
+    font-weight: 500;
+    height:25px;
+}
+.yacChatBox .ico-resize {
+    display: inline-block;
+    background: transparent url("../img/ico-resize.png") no-repeat scroll center center;
+    width: 11px;
+    height: 11px;
+    margin: 3px;
+    float: right;
+}
+.yacChatBox .ico-person {
+    display: inline-block;
+    width: 13px;
+    height: 13px;
+    background: #C2EBF7 url("../img/ico-person-13x13.png") no-repeat scroll center center;
+    margin-right: 10px;
+}
+.yacChatBox .contentFrame {
+    height: 431px;
+    margin: 0px;
+    padding: 0px;
+    border: 0;
+    width: 100%;
+    background-color: #F9F9F9;
+}
+
+/*
+.yacChatBox-contentFrame {
+   width:518px;
+   height:425px;
+}
+.yacChatBox .yacChatBox-header {
+    border-top:1px solid black;
+    border-left:1px solid black;
+    border-right:1px solid black;
+    height: 40px;
+    background-color:antiquewhite;
+}
+.yacChatBox .yacChatBox-content {
+    border :1px solid black;
+    height: 427px;
+    background-color:antiquewhite;
+}
+.yacChatBox .yacChatBox-header-resize {
+    display:inline-block;
+    width:30px;
+    height:39px;
+    float:right;
+}
+.yacChatBox .yacChatBox-header-title {
+    display:inline-block;
+    width:488px;
+    height:39px;
+    float:left;
+}
+*/

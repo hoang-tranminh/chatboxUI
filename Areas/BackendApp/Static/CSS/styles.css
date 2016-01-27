@@ -1,0 +1,265 @@
+﻿* {
+    -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+    -moz-box-sizing: border-box;    /* Firefox, other Gecko */
+    box-sizing: border-box;  
+    padding:0px;
+    margin:0px;
+}
+a {
+    text-decoration:none;
+}
+body {
+    /*font-family: "Segoe UI";
+    font-size:13px;*/
+}
+button, html input[type="button"], input[type="reset"], input[type="submit"] {
+    cursor: pointer;
+}
+.hidden {
+    display:none;
+}
+input {
+    line-height: normal;
+}
+.btn {
+    background: #2E669E none repeat scroll 0% 0%;
+    border: 1px solid #29568C;
+    padding: 10px 35px;
+    color: #FFF;
+}
+
+#container {
+    background-color:#F9F9F9;
+}
+
+ul {
+    margin:0px;
+    padding:0px;
+    list-style:none;
+}
+
+body {
+    background-color:white;
+}
+.hidden {
+    display:none;
+}
+.loginBox {
+    width:500px;
+    text-align:left;
+    margin: auto;
+}
+
+/*=================<LiveChat>==================*/
+#adminInvi, #userInvi, #userOnline {
+    max-height: 400px;
+} 
+.tab-content {
+    padding:10px;
+}
+/*=================</LiveChat>==================*/
+
+/*==============<ChatArea>================*/
+.chatArea .header {
+    width:470px;
+    height:46px;
+    border-bottom: 1px solid #9FD7E4;
+    clear:both;
+}
+.chatArea {
+     background-color:white;
+}
+.chatArea .avatar {
+    width:35px;
+    height:35px;
+    float:left;
+    background: url(/Areas/ChatFront/Static/IMG/UserAvatarBg.png) center center no-repeat transparent;
+    margin:5px 0 0px 4px;
+}
+.chatArea .leaveTopicLink {
+    padding:0 0 0 5px;
+    cursor:pointer;
+}
+.chatArea .headerText {
+    float:right;
+    width:420px;
+    height:46px;
+}
+.chatArea .userName {
+    padding:4px 0 0 0;
+}
+.chatArea .greeting {
+    color:#839EBB;
+    padding: 0 5px 0 0;
+}
+.chatArea .name {
+    color:#F2B962;
+}
+.chatArea .userName {
+    height:23px;
+    width: 485px;
+}
+.chatArea .topicName {
+    height:24px;
+    width: 485px;
+}
+.messageArea {
+    padding:5px 0 5px 0;
+    width: 470px;
+    height: 320px;
+    overflow-y:scroll;
+    overflow-x:hidden;
+}
+.messageArea .left {
+    float:left;
+}
+.messageArea .text-container {
+    margin:0 0 0 -8px;
+    padding: 0 0 0 8px;
+    position:relative;
+    width:428px;
+}
+.messageArea .ico-arrow {
+    position: absolute;
+    display: block;
+    height: 0px;
+    width: 0px;
+}
+.messageArea .text-container {
+
+border-radius: 6px;
+}
+.messageList {
+    
+}
+.messageArea .nick-name {
+    font-weight: 500;
+color: #2F679E;
+margin: 0 8px 0 0px;
+}
+.messageArea li.other .text-container {
+    background-color: #C2EBF7;
+    padding: 4px 2px 5px 6px;
+    margin:4px 0 0 6px;
+    
+}
+.messageArea li.me .text-container {
+    background-color: #F7E9D9; 
+    padding: 4px 6px 5px 5px;
+    margin:4px 6px 0 18px;
+}
+.messageArea li.other .ico-arrow {
+    border-right-color: #C2EBF7;
+    left: -7px;
+    top: 2px;
+    border-top: 8px solid transparent;
+    border-right: 8px solid #C2EBF7;
+    border-bottom: 8px solid transparent;
+}
+.messageArea li.me .ico-arrow {
+    border-right-color: #F7E9D9; 
+    left: 427px;
+    top: 2px;
+    border-top: 8px solid transparent;
+    border-left: 8px solid #F7E9D9;
+    border-bottom: 8px solid transparent;
+}
+.messageArea .item-time {
+    float: right;
+    font-size: 95%;
+    font-style: italic;
+    color: gray;
+}
+.messageArea li {
+    cursor:pointer;
+}
+.chatArea .form {
+    padding:7px 0 0 5px;
+    border-top:1px solid #9FD7E4;
+}
+.chatArea .inputDiv {
+    float:left;
+    
+}
+.chatArea .messageinput {
+    width: 443px;
+    height:49px; 
+    resize: none;
+    padding: 0 2px 0 2px;
+}
+.chatArea .sendBtn {
+    width:16px;
+    height:49px;
+    cursor:pointer;
+    margin:0 3px 0 3px;
+}
+
+/*==============</ChatArea>================*/
+
+.chatBoxWrapper {
+    width:480px;
+    position:absolute;
+    top:68px;
+    left:320px;
+    background-color:white;
+    z-index:1000;
+    border: 5px solid #59ACDA;
+    border-radius: 5px;
+    height: 461px;
+    overflow:hidden;
+}
+ .chatBoxWrapper .handle {
+    width:445px;
+    height:22px;
+    float: left;
+    cursor: pointer;
+    padding-left:10px;
+ }
+.chatBoxWrapper .handleContainer {
+    width:470px;
+    height:22px;
+    background-color:cornflowerblue;
+}
+.chatBoxWrapper img.minmaxButton {
+    float:right;
+    position: relative;
+    top: 5px;
+    left: -7px;
+    cursor: pointer;
+}
+/*==============<Invitations>==============*/
+.infoDiv {
+    margin: 0 0 12px 0;
+}
+.infoDiv span.label {
+    font-size:90%;
+}
+
+li.previewItem .nick-name {
+    font-weight: 500;
+    color: #2F679E;
+    margin: 0 8px 0 0px;
+}
+
+li.previewItem .item-time {
+    font-weight: 500;
+    color: lightgray;
+    margin: 0 8px 0 0px;
+    font-style:italic;
+}
+
+ /*==============</Invitations>==============*/
+
+ /*======<PreviewBox>================*/
+.previewMessageList {
+    max-height:400px;
+    overflow-y:auto;
+}
+ /*======</PreviewBox>================*/
+
+.showTimeLabel {
+     margin:0 0 10px 0;
+    display: inline-block
+}
+
+

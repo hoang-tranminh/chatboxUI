@@ -1,0 +1,164 @@
+/*
+    Layout
+*/
+body {
+    background: #eee;
+}
+
+#layout {
+    overflow: hidden;
+    width: 75%;
+    margin: 0 auto;
+}
+
+h1 {
+    color: #1f8dd6;
+}
+
+.block {
+    display: block;
+}
+
+.left-aligned {
+    text-align: left;
+}
+
+.color-gray {
+    color: #888;
+}
+/*
+    Home
+*/
+.home-logo {
+    width: 32px;
+}
+/*
+    Login
+*/
+.login-box {
+    background: #FFF;
+}
+
+.login-box-title {
+    background: #323941;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
+
+.login-box-content {
+    margin: 0 30px;
+    overflow:hidden;
+}
+
+.login-box-viafb-button {
+    display: block;
+    background: #536ca4;
+    text-align: center;
+    text-decoration: none;
+    color: #fff;
+    padding: 10px;
+}
+
+.seperator {
+    text-align: center;
+    margin: 25px 0;
+    position: relative;
+}
+
+.seperator-line {
+    height: 2px;
+    line-height: 1px;
+    background: #cdcdcd;
+    position: absolute;
+    width: 100%;
+    top: 50%;
+}
+
+.seperator-text {
+    position: relative;
+    z-index: 2;
+    background: #fff;
+    padding: 0 50px;
+}
+
+.icon-facebook {
+    font-family: FontAwesome;
+    font-weight: normal;
+    font-style: normal;
+    text-decoration: inherit;
+    display: inline;
+    width: auto;
+    height: auto;
+    line-height: normal;
+    vertical-align: baseline;
+    background-image: none !important;
+    background-position: 0% 0%;
+    background-repeat: repeat;
+}
+
+icon-facebook:before {
+    content: "\f09a";
+}
+
+.icon-large {
+    display: inline-block;
+    width: 28px;
+    height: 28px;
+    color: #fff;
+    font-size: 14px;
+    line-height: 36px;
+    text-align: center;
+    vertical-align: -3px;
+}
+
+.login-box-viaemail .text-box {
+    width: 99%;
+    border: 1px solid #cdcdcd;
+    padding: 5px 0 5px 5px;
+}
+
+.login-box-viaemail .pure-u-1 {
+    margin-bottom: 15px;
+}
+
+.login-button {
+    background: #01984b;
+    display: block;
+    border: 0;
+    color: #fff;
+    width: 100%;
+    padding: 10px 0;
+}
+.register-bar {
+    margin-top:10px;
+    font-size:0.85em;
+}
+.register-link {
+    text-decoration:none;
+    color:#6a91bc;
+    margin-left:10px;
+}
+
+
+html { font-family: Georgia, Serif; }
+footer { text-align: center; font-style: italic; color: #999; font-size: 12pt; border-top: solid 1px #aaa; padding: 1em 0; margin-top: 2em; }
+
+h1, h2 { font-family: Helvetica, Arial, Sans-Serif; line-height: 1.5em; }
+h1 { font-size: 32pt; color: #00b0d8; text-shadow: 0 1px 1px #666; }
+h2, section h1 { font-size: 12pt;  }
+header h1 { margin: 0; }
+
+pre { border: solid #666 dashed; background-color: #ddf; }
+
+#status { color: #fff; padding: 3px; }
+.offline { background-color: #900; }
+.pending { background-color: #666; }
+.online { background-color: #090; }
+
+#message { width: 300px; }
+#port { width: 5em; }
+#chat h1 { display: none; }
+#chat p { margin :0 0 .25em 0; padding: .25em; }
+#chat p:nth-child(even){ background-color: #eee; }
+#poweredBy { float: right; display: block; background: transparent url('images/poweredby.png') top left no-repeat; width:191px; height: 72px; overflow: hidden; text-indent: 100000px; line-height: 4em; }

@@ -1,0 +1,61 @@
+﻿@model YetAnotherChat.BackendWebAppUI.Areas.BackendApp.Models.LoginModel
+
+@{
+    ViewBag.Title = "Log in";
+    Layout = "~/Areas/BackendApp/Views/Shared/BackendAppLayout.cshtml";
+}
+
+@section PageHeader{} 
+<div id="page-wrapper" >
+
+   
+        @*<h1>Hello, world!</h1>
+        <p>This is a template for a simple marketing or informational website. It includes a large callout called a jumbotron and three supporting pieces of content. Use it as a starting point to create something more unique.</p>
+        <p>
+            <a href="#" class="btn btn-primary btn-lg" role="button">Learn more »</a>
+        </p>*@
+    
+    <div class="container-fluid">
+        @using (Html.BeginForm("Login","Account", new { ReturnUrl = ViewBag.ReturnUrl }, FormMethod.Post, new { role = "form" }))
+        {
+            @Html.AntiForgeryToken()
+            @Html.ValidationSummary(true)
+            <div class="jumbotron loginBox">
+                <div class="form-group">
+                    @Html.LabelFor(m => m.ClientDomain)
+                    @Html.DropDownListFor(m => m.ClientDomain, ViewBag.AllDomains as IEnumerable<SelectListItem>, new { @class="form-control" })
+                    <p class="help-block">@Html.ValidationMessageFor(m => m.ClientDomain)</p>
+                </div>
+                <div class="form-group">
+                    @Html.LabelFor(m => m.UserName)
+                    @Html.TextBoxFor(m => m.UserName, new { @class = "form-control" })
+                    <p class="help-block">@Html.ValidationMessageFor(m => m.UserName)</p>
+                </div>
+                <div class="form-group">
+                    @Html.LabelFor(m => m.Password)
+                    @Html.PasswordFor(m => m.Password, new { @class = "form-control" })
+                    <p class="help-block">@Html.ValidationMessageFor(m => m.Password)</p>
+                </div>
+                <div class="form-group checkbox">
+                    <label>
+                        @Html.CheckBoxFor(m => m.RememberMe)
+                        @Html.DisplayNameFor(m => m.RememberMe)
+                </label>
+                </div>
+                <input type="submit" class="btn btn-primary btn-lg" value="Log in" />
+            </div>
+        }
+    </div>
+</div>
+     
+@*<p>
+        @Html.ActionLink("Register", "Register") if you don't have an account.
+    </p>*@
+@*<section class="social" id="socialLoginForm">
+    <h2>Use another service to log in.</h2>
+    @Html.Action("ExternalLoginsList", new { ReturnUrl = ViewBag.ReturnUrl })
+</section>*@
+
+@*@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+}*@

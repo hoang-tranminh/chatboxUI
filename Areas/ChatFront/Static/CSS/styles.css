@@ -1,0 +1,588 @@
+﻿* {
+    -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+    -moz-box-sizing: border-box;    /* Firefox, other Gecko */
+    box-sizing: border-box;  
+    padding:0px;
+    margin:0px;
+}
+a {
+    text-decoration:none;
+}
+body {
+    font-family: "Segoe UI";
+    font-size:13px;
+}
+button, html input[type="button"], input[type="reset"], input[type="submit"] {
+    cursor: pointer;
+}
+.hidden {
+    display:none;
+}
+input {
+    line-height: normal;
+}
+.btn {
+    background: #2E669E none repeat scroll 0% 0%;
+    border: 1px solid #29568C;
+    padding: 10px 35px;
+    color: #FFF;
+}
+
+#container {
+    background-color:#F9F9F9;
+}
+
+ul {
+    margin:0px;
+    padding:0px;
+    list-style:none;
+}
+
+/*===============<Big user avatar>============*/
+.userAvatarBig {
+    width: 100%;
+    height: 100px;
+}
+.userAvatarBig .imgLink {
+    display:inline-block;
+    width:62px;
+    height: 62px;
+}
+.userAvatarBig .greetingLink {
+    display:block;
+    padding-top:3px;
+}
+.userAvatarBig .greeting {
+    font-weight:400;
+    color:#839EBB;
+    font-size:19px;
+    padding-right:4px;
+}
+.userAvatarBig .userName {
+    font-weight:400;
+    color:#F2B962;
+    font-size:19px;
+}
+/*================</Big user avatar>============*/
+
+/*==============<NewTopic>===========================*/
+.newTopicForm .newTopicTitle {
+    color: #7997BB;
+    font-weight:600;
+    font-size:16px;
+    width: 100%;
+    text-align:center;
+    padding: 0 0 10px 0;
+}
+
+.newTopicForm .avatarContainer {
+    width:100%;
+    height:158px;
+    text-align:center;
+    padding-top:46px;
+}
+.newTopicForm .topicName {
+    text-align:center;
+     padding: 0 0 10px 0;
+}
+#newTopicFormErrors, #registerFormErrors, #messageFormErrors {
+    margin: 0 10px 0 10px;
+    padding: 2px 4px 2px 4px;
+    color:red;
+    background-color: lightgoldenrodyellow;
+    border-radius:5px;
+}
+#messageFormErrors {
+    position: absolute;
+    top: 298px;
+    left: 0px;
+    margin: 0 15px 0 9px;
+    width: 292px;
+    height: 42px;
+}
+/*==============</NewTopic>===========================*/
+
+/*==============<Registration screen>===========================*/
+.registrationForm .avatarContainer {
+    width:100%;
+    height:125px;
+    text-align:center;
+    padding-top:16px;
+}
+
+.registrationTitle{
+    color: #7997BB;
+    font-weight:600;
+    font-size:16px;
+    width: 100%;
+    text-align:center;
+}
+.registerRadio {
+    width: 100%;
+    text-align:center;
+    padding: 5px 0px 5px;
+}
+.registerRadio label {
+    position:relative;
+    top:-1px;
+}
+.registrationForm .radioButton {
+    margin: 9px 6px 6px 6px;
+}
+
+.loginProviders {
+    
+    width:100%;
+    text-align:center;
+}
+.loginProviders li {
+    display:inline-block;
+    padding:5px 21px 0px 0px;
+}
+.registrationForm .anonymousName,.registrationForm .topicName {
+    width:100%;
+    text-align:center;
+    padding: 8px 0px 8px;
+}
+.anonymousName input, .topicName input {
+    width:270px;
+}
+.buttonContainer {
+    width:100%;
+    text-align:center;
+    padding: 10px 0px 10px;
+}
+
+.registerButton {
+    padding-left: 25px;
+    padding-right: 25px;
+    margin-right: 5px;
+}
+.cancelButton {
+    padding-left: 25px;
+    padding-right: 25px;
+    background: #19B7E4 none repeat scroll 0% 0%;
+    border-color: #19B7E4;
+}
+
+/*==============</Registration screen>===========================*/
+
+
+/*==============<Accordion>===========================*/
+.panelContent {
+    background-color:#F9F9F9;
+    margin:0 5px 0 5px;
+}
+.panelContent.collapsed {
+    display:none;
+}
+.panel, .panelContent, .panelHeaders{
+    position:absolute;
+}
+.panel.topicPanel {
+    left:160px;
+}
+.panel.active {
+    font-weight:700;
+}
+.panelContent.active {
+    z-index:200;
+    width:320px;
+    top: 26px;
+}
+.panelContent.active {
+    display:block;
+    height:404px; 
+    overflow-x:hidden;
+    overflow-y:auto;
+}
+.defaultPanel {
+    height:404px; 
+    z-index:100;
+}
+.panelHeader {
+    width:160px;
+    height:26px;
+    font-size: 16px;
+    font-weight: 500;
+    color: #2E669E;
+    cursor:pointer;
+    z-index:200;
+    background-color:#F9F9F9;
+    display:inline-block;
+}
+.accordion {
+    width:100%;
+    position:relative;
+}
+.accordion .panelHeaders li {
+    margin:0 5px 0 5px;
+    /*border-top:1px solid #1AB8E5;*/
+}
+
+.panelUpdate {
+    color:red;
+}
+.arrowIcon
+{
+    display: inline-block;
+    background: transparent url("../img/ico-arrow-top.png") no-repeat scroll center center;
+    width: 20px;
+    height: 14px;
+    float: right;
+    margin: 5px;
+    padding: 5px;
+}
+.arrowIcon.arrowUp {
+    background-image:url("/Areas/ChatFront/Static/img/ico-arrow-top.png");
+}
+.arrowIcon.arrowDown {
+    background-image:url("/Areas/ChatFront/Static/img/ico-arrow-down.png");
+}
+/*==============</Accordion>===========================*/
+
+/*==============<Main screen>===========================*/
+.mainScreen .avatarContainer {
+    width:100%;
+    height:145px;
+    text-align:center;
+    padding-top:30px;
+}
+.mainScreenIcons {
+     width:100%;
+     height:165px;
+     text-align:center;
+     position:relative;
+}
+
+.userCountBg {
+    display:inline-block;
+    width:28px;
+    height:17px;
+    background: url(/Areas/ChatFront/Static/IMG/userCountBg2.png) no-repeat transparent;
+    font-size:10px;
+    padding-top:1px;
+    color:white;
+}
+.mainScreenIcons img {
+    cursor:pointer;
+}
+.positioned {
+    position:absolute;
+}
+.domainUsers {
+  top: 7px;
+left: 84px;
+}
+.linkUsers {
+top: 25px;
+left: 194px;
+}
+.adminUsers {
+   top: 90px;
+left: 126px;
+}
+.domainUserCount {
+    top: 45px;
+left: 66px;
+}
+.linkUserCount {
+ top: 13px;
+left: 220px;
+}
+.adminUserCount {
+  top: 122px;
+left: 165px;
+}
+/*==============</Main screen>===========================*/
+
+/*==============<InvitationList>================*/
+.invitation {
+    font-size:14px;
+    margin:0 3px 0 3px;
+}
+.invitation .userName {
+    color: #F57E20;
+}
+.invitation .inviLink {
+    padding:0 0 0 3px;
+}
+.invitation .inviTime {
+    color:#C0C0C0;
+    padding:0 4px 0 4px;
+}
+/*==============</InvitationList>================*/
+
+/*==============<TopicList>================*/
+.topicList {
+    padding:10px 0 0 0;
+}
+.topicTable .inviLink {
+    padding:0 0 0 3px;
+}
+.topicTable,
+.topicTable tr,
+.topicTable td,
+.topicTable th {
+    margin:0px;
+    padding:0px;
+    border:none;
+}
+.topicTable {
+    width:100%;
+}
+.topicTable tr{
+    height:27px;
+    font-size:14px;
+}
+.topicTable th {
+    text-align:center;
+    
+    color: #4CBADB;
+}
+.topicTable .topicName span {
+    font-size:16px;
+    font-weight: 400;
+}
+.topicTable th.topicName,
+.topicTable th.messageCount {
+    background-color:#CDEFF8;
+}
+.topicTable th.userCount,
+.topicTable th.createdDate {
+    background-color:#DDF4FA;
+}
+.topicTable .userCount,
+.topicTable .messageCount,
+.topicTable .createdDate {
+    padding:0  10px 0 10px;
+    text-align:center;
+}
+.topicSearch {
+    position:relative;
+}
+.topicSearch input {
+    width:320px;
+    font-size:12px;
+    margin: 10px 0 10px 0;
+    padding: 0 0 0 25px;
+}
+.topicSearch .searchIcon {
+    position:absolute;
+    top:11px;left:2px;
+}
+/*==============</TopicList>================*/
+
+/*==============<ActionSlideInMenu>================*/
+.actionSlideIn {
+    position: absolute;
+    width:0;
+height: 134px;
+top: 2px;
+left: 324px;
+    background: url(/Areas/ChatFront/Static/IMG/SlideInMenuBg.png) no-repeat center center transparent;
+    text-align:center;
+}
+
+.actionSlideIn.active {
+    left: 282px;
+    border-bottom-left-radius:7px;
+    border-top-left-radius:7px;
+    padding:0 0 0 4px; 
+    width:48px;       
+}
+.actionSlideIn .actionIcons {
+    display:none;
+    border:none;
+    padding:0;
+    border-radius:0;
+}
+.actionSlideIn.active .actionIcons {
+    display:block;
+   
+}
+
+.domainUsersSmall,
+.linkUsersSmall,
+.adminUsersSmall {
+    width:42px;
+    height:42px;
+    cursor:pointer;
+}
+.linkUsersSmall {
+    position:relative;
+    top:-9px;
+}
+.adminUsersSmall {
+    position:relative;
+    top:-12px;
+}
+.domainUserCountSmall {
+    top: 27px;
+left: 4px;
+}
+.linkUserCountSmall {
+     top: 68px;
+left: 4px;
+}
+.adminUserCountSmall {
+     top:110px;
+    left:4px;
+}
+.actionSlideIn .handle {
+    width:15px;
+    height:30px;
+    position:absolute;
+    top:5px;
+    left:-15px;
+    cursor:pointer;
+}
+.actionSlideIn .handle.show {
+    display:block;
+}
+.actionSlideIn .handle.hide {
+    display:none;
+}
+.actionSlideIn .handle.active {
+     background: transparent url("/Areas/ChatFront/Static/img/MenuHandleRight.png") no-repeat scroll center center;
+}
+.actionSlideIn .handle {
+     background: transparent url("/Areas/ChatFront/Static/img/MenuHandleLeft.png") no-repeat scroll center center;
+}
+/*==============</ActionSlideInMenu>================*/
+
+/*==============<ChatArea>================*/
+.chatArea .header {
+    width:320px;
+    height:46px;
+    border-bottom: 1px solid #9FD7E4;
+}
+.chatArea .avatar {
+    width:35px;
+    height:35px;
+    float:left;
+    background: url(/Areas/ChatFront/Static/IMG/UserAvatarBg.png) center center no-repeat transparent;
+    margin:5px 0 0px 4px;
+}
+.chatArea .leaveTopicLink {
+    padding:0 0 0 5px;
+    cursor:pointer;
+}
+.chatArea .headerText {
+    float:right;
+    width:273px;
+    height:46px;
+}
+.chatArea .userName {
+    padding:4px 0 0 0;
+}
+.chatArea .greeting {
+    color:#839EBB;
+    padding: 0 5px 0 0;
+}
+.chatArea .name {
+    color:#F2B962;
+}
+.chatArea .userName {
+    height:23px;
+    width: 270px;
+}
+.chatArea .topicName {
+    height:24px;
+    width: 270px;
+}
+.messageArea {
+    padding:5px 0 5px 0;
+    width: 326px;
+    height: 298px;
+    overflow-y:scroll;
+    overflow-x:hidden;
+}
+.messageArea .left {
+    float:left;
+}
+.messageArea .text-container {
+    margin:0 0 0 -8px;
+    padding: 0 0 0 8px;
+    position:relative;
+    width:275px;
+}
+.messageArea .ico-arrow {
+    position: absolute;
+    display: block;
+    height: 0px;
+    width: 0px;
+}
+.messageArea .text-container {
+
+border-radius: 6px;
+}
+.messageList {
+    
+}
+.messageArea .nick-name {
+    font-weight: 500;
+color: #2F679E;
+margin: 0 8px 0 0px;
+}
+.messageArea li.other .text-container {
+    background-color: #C2EBF7;
+    padding: 4px 2px 5px 6px;
+    margin:4px 0 0 6px;
+    
+}
+.messageArea li.me .text-container {
+    background-color: #F7E9D9; 
+    padding: 4px 6px 5px 5px;
+    margin:4px 6px 0 18px;
+}
+.messageArea li.other .ico-arrow {
+    border-right-color: #C2EBF7;
+    left: -6px;
+    top: 2px;
+    border-top: 8px solid transparent;
+    border-right: 8px solid #C2EBF7;
+    border-bottom: 8px solid transparent;
+}
+.messageArea li.me .ico-arrow {
+    border-right-color: #F7E9D9; 
+    left: 275px;
+    top: 2px;
+    border-top: 8px solid transparent;
+    border-left: 8px solid #F7E9D9;
+    border-bottom: 8px solid transparent;
+}
+.messageArea .item-time {
+    float: right;
+    font-size: 95%;
+    font-style: italic;
+    color: gray;
+}
+.messageArea li {
+    cursor:pointer;
+}
+.chatArea .form {
+    padding:7px 0 0 5px;
+    border-top:1px solid #9FD7E4;
+}
+.chatArea .inputDiv {
+    float:left;
+    
+}
+.chatArea .messageinput {
+    width: 300px;
+    height:49px; 
+    resize: none;
+    padding: 0 2px 0 2px;
+}
+.chatArea .sendBtn {
+    width:16px;
+    height:49px;
+    cursor:pointer;
+    margin:0 3px 0 3px;
+}
+
+/*==============</ChatArea>================*/
+
+
+

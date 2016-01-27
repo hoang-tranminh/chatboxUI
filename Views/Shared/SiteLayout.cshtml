@@ -1,0 +1,35 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+    @if (IsSectionDefined("HeaderStyle"))
+    {
+        RenderSection("HeaderStyle");
+    }
+    else
+    { 
+        <link href="~/Css/pure-min.css" rel="stylesheet" />
+         <link href="~/Css/grid.css" rel="stylesheet" /> 
+        <link href="~/Css/styles.css" rel="stylesheet" />
+        <script src="~/Scripts/modernizr-custom-2.0.min.js"></script>
+    }
+    @RenderSection("HeaderScript",false)
+</head>
+<body>
+    <div class="pure-g-r" id="layout">
+        <header class="pure-u-1">
+            @RenderSection("PageHeader")
+        </header>
+        @RenderBody()
+    </div>
+    @if (IsSectionDefined("FooterScript"))
+    {
+         <script type="text/javascript" src="~/Scripts/jquery-1.7.1.min.js"></script>@*
+        <script src="~/Scripts/yetanotherchat.js"></script> 
+         <script src="~/Scripts/jquery.cookie.js"></script>*@
+        @RenderSection("FooterScript");
+    }
+</body>
+</html>
